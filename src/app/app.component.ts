@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
   
   
   ngOnInit() {
-
+    
     this.NgRedux.subscribe( () => {
         this.counter = this.NgRedux.getState().counter;
     });
